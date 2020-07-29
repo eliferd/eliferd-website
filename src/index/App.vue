@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <b-container class="shadow-lg px-0">
+    <b-container class="shadow-lg px-0 overflow-hidden">
       <b-navbar toggleable="lg" type="light" variant="white" :sticky="stickage">
-        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+        <b-navbar-toggle class="border-0" target="nav-collapse"></b-navbar-toggle>
 
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav>
@@ -17,20 +17,36 @@
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
-      <b-jumbotron header="BootstrapVue" lead="Bootstrap v4 Components for Vue.js 2">
-        <p>For more information visit website</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quisquam, dolore commodi esse magnam ut. Fugiat vero, distinctio neque officiis assumenda qui? Maiores, vitae quasi placeat ea voluptates ipsum voluptatem?</p>
-        <b-button variant="primary" href="#">More Info</b-button>
-      </b-jumbotron>
+      <b-row>
+        <GradientBlueBanner page="Bienvenue !"/>
+      </b-row>
+      <b-row>
+        <b-col>
+          <h3 class="mt-4 text-center">Bienvenue sur mon site !</h3>
+          <hr class="hr">
+          <p class="p-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veritatis delectus qui, facere molestiae officiis tempora? Vero laboriosam facere deserunt, nobis accusamus corrupti consequuntur veniam, ipsum assumenda maxime sit rerum.
+          </p>
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col cols="12" class="my-3 text-center">
+          elias54 © 2017-2020 All rights reserved.
+        </b-col>
+      </b-row>
     </b-container>
   </div>
 </template>
 
+<style src="./style.css"></style>
 <script>
-// import HelloWorld from '../components/HelloWorld.vue'
+import GradientBlueBanner from '../components/GradientBlueBanner.vue'
 
 export default {
   name: 'Index',
+  components: {
+    GradientBlueBanner
+  },
   props: {
     sticky: {
       type: Boolean
@@ -43,5 +59,3 @@ export default {
   }
 }
 </script>
-
-<style src="./style.css"></style>
