@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="../assets/logo.png">
+    <img alt="Elias54 Logo" src="../assets/logo.png">
     <HelloWorld msg="Ceci est la seconde page de votre application"/>
   </div>
 </template>

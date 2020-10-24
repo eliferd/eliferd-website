@@ -6,8 +6,8 @@
 
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav>
-            <b-nav-item href="#" active>ACCUEIL</b-nav-item>
-            <b-nav-item href="projets.html">PROJETS</b-nav-item>
+            <b-nav-item href="/">ACCUEIL</b-nav-item>
+            <b-nav-item href="#" active>PROJETS</b-nav-item>
             <b-nav-item href="portfolio.html">PORTFOLIO</b-nav-item>
             <b-nav-item href="contact.html">CONTACT</b-nav-item>
           </b-navbar-nav>
@@ -18,15 +18,10 @@
         </b-collapse>
       </b-navbar>
       <b-row>
-        <GradientBlueBanner page="Bienvenue"/>
+        <GradientBlueBanner page="Projets"/>
       </b-row>
       <b-row>
         <b-col>
-          <h3 class="my-4 text-center">Bienvenue sur mon site !</h3>
-          <hr class="custom">
-          <p class="p-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veritatis delectus qui, facere molestiae officiis tempora? Vero laboriosam facere deserunt, nobis accusamus corrupti consequuntur veniam, ipsum assumenda maxime sit rerum.
-          </p>
         </b-col>
       </b-row>
       <hr>
@@ -44,7 +39,7 @@
 import GradientBlueBanner from '../components/GradientBlueBanner.vue'
 
 export default {
-  name: 'Index',
+  name: 'Projets',
   components: {
     GradientBlueBanner
   },

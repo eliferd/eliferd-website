@@ -15,6 +15,7 @@
     text-transform: uppercase;
     display: flex;
     justify-content: center;
+    opacity: 1;
     transition: 0.4s;
 }
 .banner>span {

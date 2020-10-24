@@ -4,12 +4,12 @@ module.exports = {
         index: {
             entry: 'src/index/main.js',
             template: 'public/index.html', // source template
-            title: 'Page d\'accueil-' // <title><%= htmlWebpackPlugin.options.title %></title>
+            title: 'ELIAS54 - Accueil' // <title><%= htmlWebpackPlugin.options.title %></title>
         },
-        subpage: {
-            entry: 'src/subpage/main.js',
+        projets: {
+            entry: 'src/projets/main.js',
             template: 'public/index.html', // source template
-            title: 'Second page' // <title><%= htmlWebpackPlugin.options.title %></title>
+            title: 'ELIAS54 - Projets' // <title><%= htmlWebpackPlugin.options.title %></title>
         }
     }
 }
