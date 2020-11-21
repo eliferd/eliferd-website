@@ -1,9 +1,10 @@
 <template>
     <a v-bind:href="url" target="_blank">
         <div class="wrapper">
-            <div class="projectItem" v-bind:style="{ backgroundImage: 'url(' + this.backgroundURL + ')' }">
-            <span>{{ projectName }}</span>
-            </div>
+            <span class="projectItem" v-bind:style="{ backgroundImage: 'url(' + this.backgroundURL + ')' }"></span>
+            <span class="text-container">
+              <span>{{ projectName }}</span>
+            </span>
         </div>
     </a>
 </template>
@@ -11,7 +12,7 @@
 <style scoped>
 
 .wrapper {
-    max-width: 1170px;
+    width: 100%;
     height: 180px;
     position: relative;
     overflow: hidden;
@@ -25,9 +26,9 @@
     background-size: cover;
     background-position: center center;
     transition: all .5s;
-    display: flex;
     text-align: center;
     vertical-align: middle;
+    position: absolute;
     z-index: 1;
 }
 .projectItem::before {
@@ -45,19 +46,29 @@
   -webkit-filter: blur(8px);
   transform: scale(1.2);
 }
+
 a:hover {
   text-decoration: none;
 }
-span {
-  font-size: 35px;
-  color: white;
-  margin: auto;
+
+.text-container{
+  height: 100%;
   width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   z-index: 2;
 }
 
+.text-container>span {
+  font-size: 35px;
+  color: white;
+}
+
 @media(max-width: 767px) {
-    span {
+    .text-container>span {
         font-size: 24px;
     }
 }
