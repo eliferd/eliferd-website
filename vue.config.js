@@ -8,8 +8,13 @@ module.exports = {
         },
         projets: {
             entry: 'src/projets/main.js',
-            template: 'public/index.html', // source template
-            title: 'ELIAS54 - Projets' // <title><%= htmlWebpackPlugin.options.title %></title>
+            template: 'public/index.html',
+            title: 'ELIAS54 - Projets'
+        },
+        portfolio: {
+            entry: 'src/portfolio/main.js',
+            template: 'public/index.html',
+            title: 'ELIAS54 - Portfolio'
         }
     }
 }
