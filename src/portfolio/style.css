@@ -29,9 +29,17 @@ hr.custom {
     border: 1px solid black;
     width: 70px;
 }
-
+.tip {
+    margin-top: 32px;
+}
+@media(max-width: 1199px) {
+    .tip {
+        margin-top: 10px;
+    }
+}
 @media(max-width: 767px) {
     .logo {
         font-size: 67px;
     }
+
 }
