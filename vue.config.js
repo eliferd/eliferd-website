@@ -15,6 +15,11 @@ module.exports = {
             entry: 'src/portfolio/main.js',
             template: 'public/index.html',
             title: 'ELIAS54 - Portfolio'
+        },
+        contact: {
+            entry: 'src/contact/main.js',
+            template: 'public/index.html',
+            title: 'ELIAS54 - Contact'
         }
     }
 }
