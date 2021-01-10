@@ -12,9 +12,9 @@
             <b-nav-item href="#" active>CONTACT</b-nav-item>
           </b-navbar-nav>
 
-          <b-navbar-nav class="ml-auto">
+          <!-- <b-navbar-nav class="ml-auto">
             <b-nav-item href="#" class="darkmode-icon"><img src="/dark-mode.svg" width="20px" alt="Darkmode Switcher"></b-nav-item>
-          </b-navbar-nav>
+          </b-navbar-nav> -->
         </b-collapse>
       </b-navbar>
       <b-row>
@@ -51,7 +51,7 @@
       <hr>
       <b-row>
         <b-col cols="12" class="mb-3 text-center">
-          elias54 © 2017-2020 All rights reserved.
+          elias54 © 2021 Tous droits réservés.
         </b-col>
       </b-row>
     </b-container>

@@ -12,9 +12,9 @@
             <b-nav-item href="contact.html">CONTACT</b-nav-item>
           </b-navbar-nav>
 
-          <b-navbar-nav class="ml-auto">
+          <!-- <b-navbar-nav class="ml-auto">
             <b-nav-item href="#" class="darkmode-icon"><img src="/dark-mode.svg" width="20px" alt="Darkmode Switcher"></b-nav-item>
-          </b-navbar-nav>
+          </b-navbar-nav> -->
         </b-collapse>
       </b-navbar>
       <b-row>
@@ -22,8 +22,8 @@
       </b-row>
       <b-row>
         <b-col>
-          <ProjectItem projectName="Mon site web" url="#" backgroundURL="/assets/elias_site_picture.png"/>
-          <ProjectItem projectName="lawBOT - Discord BOT" url="https://law.minecraftforgefrance.fr/" backgroundURL="/assets/lawbot.png"/>
+          <ProjectItem projectName="Mon site web" url="#" backgroundURL="./assets/elias_site_picture.png"/>
+          <ProjectItem projectName="lawBOT - Discord BOT" url="https://law.minecraftforgefrance.fr/" backgroundURL="./assets/lawbot.png"/>
           <ProjectItem projectName="Admin Weapons - Minecraft Mod" url="https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/2232900-1-7-10-1-14-4-admin-weapons-v3-6-last-update" backgroundURL="https://i.imgur.com/ikWxzLm.png"/>
           <ProjectItem projectName="Fake Ores - Minecraft Mod" url="https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/2461487-1-7-10-1-13-2-fake-ores-ores-become-alive-now" backgroundURL="https://i.imgur.com/3SxLGpN.png"/>
           <ProjectItem projectName="Creeperade - Minecraft Mod" url="https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/2732815-1-10-1-13-2-creeperade-new-weapons-food-and-more" backgroundURL="https://static.planetminecraft.com/files/resource_media/screenshot/1503/2015-01-12_2129028530933_lrg.jpg"/>
@@ -32,7 +32,7 @@
       <hr>
       <b-row>
         <b-col cols="12" class="mb-3 text-center">
-          elias54 © 2017-2020 All rights reserved.
+          elias54 © 2021 Tous droits réservés.
         </b-col>
       </b-row>
     </b-container>
