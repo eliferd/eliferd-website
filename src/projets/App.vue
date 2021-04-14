@@ -32,7 +32,7 @@
       <hr>
       <b-row>
         <b-col cols="12" class="mb-3 text-center">
-          elias54 © 2021 Tous droits réservés.
+          Eliferd © 2021 Tous droits réservés.
         </b-col>
       </b-row>
     </b-container>

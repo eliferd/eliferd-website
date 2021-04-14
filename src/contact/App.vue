@@ -25,18 +25,18 @@
           <SocialMediaItem icon="twitter" name="elias54_" url="https://twitter.com/elias54_" colorCode="#1DA1F2"/>
         </b-col>
         <b-col md="6" lg="3" class="px-0 d-flex justify-content-center">
-          <SocialMediaItem icon="facebook-f" name="elias2multy" url="https://www.facebook.com/elias2multy" colorCode="#1778F2"/>
+          <SocialMediaItem icon="facebook-f" name="Eliferd" url="https://www.facebook.com/elif3rd" colorCode="#1778F2"/>
         </b-col>
         <b-col md="6" lg="3" class="px-0 d-flex justify-content-center">
-          <SocialMediaItem icon="instagram" name="law.elias54700" url="https://www.instagram.com/law.elias54700/" colorCode="#DD2A7B"/>
+          <SocialMediaItem icon="instagram" name="eliferd_" url="https://www.instagram.com/eliferd_/" colorCode="#DD2A7B"/>
         </b-col>
         <b-col md="6" lg="3" class="px-0 d-flex justify-content-center">
-          <SocialMediaItem icon="youtube" name="eliaas54" url="https://www.youtube.com/user/eliaas54" colorCode="#FF0000"/>
+          <SocialMediaItem icon="youtube" name="Eliferd" url="https://www.youtube.com/user/eliaas54" colorCode="#FF0000"/>
         </b-col>
       </b-row>
       <b-row class="mx-0">
         <b-col md="6" lg="3" class="px-0 d-flex justify-content-center">
-          <SocialMediaItem icon="steam-square" name="elias54" url="http://steamcommunity.com/id/elias54700" colorCode="#2A475E"/>
+          <SocialMediaItem icon="steam-square" name="Eliferd" url="http://steamcommunity.com/id/elias54700" colorCode="#2A475E"/>
         </b-col>
         <b-col md="6" lg="3" class="px-0 d-flex justify-content-center">
           <SocialMediaItem icon="github" name="elias54" url="https://github.com/elias54" colorCode="#211F1F"/>
@@ -51,7 +51,7 @@
       <hr>
       <b-row>
         <b-col cols="12" class="mb-3 text-center">
-          elias54 © 2021 Tous droits réservés.
+          Eliferd © 2021 Tous droits réservés.
         </b-col>
       </b-row>
     </b-container>

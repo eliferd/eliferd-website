@@ -4,22 +4,22 @@ module.exports = {
         index: {
             entry: 'src/index/main.js',
             template: 'public/index.html', // source template
-            title: 'ELIAS54 - Accueil' // <title><%= htmlWebpackPlugin.options.title %></title>
+            title: 'ELIFERD - Accueil' // <title><%= htmlWebpackPlugin.options.title %></title>
         },
         projets: {
             entry: 'src/projets/main.js',
             template: 'public/index.html',
-            title: 'ELIAS54 - Projets'
+            title: 'ELIFERD - Projets'
         },
         portfolio: {
             entry: 'src/portfolio/main.js',
             template: 'public/index.html',
-            title: 'ELIAS54 - Portfolio'
+            title: 'ELIFERD - Portfolio'
         },
         contact: {
             entry: 'src/contact/main.js',
             template: 'public/index.html',
-            title: 'ELIAS54 - Contact'
+            title: 'ELIFERD - Contact'
         }
     }
 }
