@@ -42,10 +42,15 @@
           <SocialMediaItem icon="github" name="elias54" url="https://github.com/elias54" colorCode="#211F1F"/>
         </b-col>
         <b-col md="6" lg="3" class="px-0 d-flex justify-content-center">
-          <SocialMediaItem icon="vimeo-v" name="elias54700" url="https://vimeo.com/elias54700" colorCode="#19B7EA"/>
+          <SocialMediaItem icon="vimeo-v" name="eliferd" url="https://vimeo.com/eliferd" colorCode="#19B7EA"/>
         </b-col>
         <b-col md="6" lg="3" class="px-0 d-flex justify-content-center">
           <SocialMediaItem icon="dribbble" name="eliaas54" url="https://dribbble.com/elias54" colorCode="#EA4C89"/>
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col md="6" lg="3" class="px-0 d-flex justify-content-center">
+          <SocialMediaItem icon="twitch" name="elias54_" url="https://www.twitch.tv/elias54_" colorCode="#6441A4"/>
         </b-col>
       </b-row>
       <hr>
