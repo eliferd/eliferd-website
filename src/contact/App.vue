@@ -39,13 +39,13 @@
           <SocialMediaItem icon="steam-square" name="Eliferd" url="http://steamcommunity.com/id/elias54700" colorCode="#2A475E"/>
         </b-col>
         <b-col md="6" lg="3" class="px-0 d-flex justify-content-center">
-          <SocialMediaItem icon="github" name="elias54" url="https://github.com/elias54" colorCode="#211F1F"/>
+          <SocialMediaItem icon="github" name="eliferd" url="https://github.com/eliferd" colorCode="#211F1F"/>
         </b-col>
         <b-col md="6" lg="3" class="px-0 d-flex justify-content-center">
           <SocialMediaItem icon="vimeo-v" name="eliferd" url="https://vimeo.com/eliferd" colorCode="#19B7EA"/>
         </b-col>
         <b-col md="6" lg="3" class="px-0 d-flex justify-content-center">
-          <SocialMediaItem icon="dribbble" name="eliaas54" url="https://dribbble.com/elias54" colorCode="#EA4C89"/>
+          <SocialMediaItem icon="dribbble" name="eliferd" url="https://dribbble.com/eliferd" colorCode="#EA4C89"/>
         </b-col>
       </b-row>
       <b-row>
