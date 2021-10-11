@@ -9,7 +9,18 @@
     </a>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+
+@mixin full-size {
+    width: 100%;
+    height: 100%;
+}
+
+@mixin filter-transform {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    transform: scale(1.2);
+}
 
 .wrapper {
     width: 100%;
@@ -17,11 +28,22 @@
     position: relative;
     overflow: hidden;
     z-index: 0;
+
+    &:hover {
+        .projectItem {
+            @include filter-transform;
+        }
+    }
+
+    &:focus {
+        .projectItem {
+            @include filter-transform;
+        }
+    }
 }
 
-.projectItem{
-    height: 100%;
-    width: 100%;
+.projectItem {
+    @include full-size;
     background-color: rgb(87, 87, 87);
     background-size: cover;
     background-position: center center;
@@ -30,57 +52,58 @@
     vertical-align: middle;
     position: absolute;
     z-index: 1;
-}
-.projectItem::before {
-  content: "";
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.356);
-}
-.wrapper:hover .projectItem,
-.wrapper:focus .projectItem {
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  transform: scale(1.2);
+
+    &::before{
+        content: "";
+        @include full-size;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.356);
+    }
 }
 
-a:hover {
-  text-decoration: none;
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.text-container {
+    @include full-size;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
 }
 
 .text-container{
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  z-index: 2;
-}
-
-.text-container>span {
-  font-size: 35px;
-  color: white;
+    &>span {
+        font-size: 35px;
+        color: white;
+    }
 }
 
 @media(max-width: 767px) {
-    .text-container>span {
-        font-size: 24px;
+    .text-container{
+        &>span {
+            font-size: 24px;
+        }
     }
 }
 </style>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from 'vue';
+
+export default Vue.extend({
   name: 'ProjectItem',
   props: {
     projectName: String,
     url: String,
     backgroundURL: String
   }
-}
+});
 </script>
