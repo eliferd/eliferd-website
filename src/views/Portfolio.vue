@@ -158,6 +158,9 @@ export default Vue.extend({
         GradientBlueBanner,
         PortfolioItem,
         CustomFooter
+    },
+    created() {
+        document.title = this.$route.meta?.title;
     }
 });
 

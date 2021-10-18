@@ -55,6 +55,9 @@ export default Vue.extend({
     GradientBlueBanner,
     CustomFooter
   },
+  created() {
+    document.title = this.$route.meta?.title;
+  }
 });
 
 </script>

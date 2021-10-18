@@ -87,6 +87,9 @@ export default Vue.extend({
         GradientBlueBanner,
         SocialMediaItem,
         CustomFooter
+    },
+    created() {
+        document.title = this.$route.meta?.title;
     }
 });
 

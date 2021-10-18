@@ -12,22 +12,33 @@ const routes: RouteConfig[] = [
     path: "/",
     name: "Accueil",
     component: Home,
-    
+    meta: {
+      title: 'ELIFERD - Accueil'
+    }
   },
   {
     path: "/projects",
     name: "Projets",
-    component: Projects
+    component: Projects,
+    meta: {
+      title: 'ELIFERD - Mes projets'
+    }
   },
   {
     path: "/portfolio",
     name: "Portfolio",
-    component: Portfolio
+    component: Portfolio,
+    meta: {
+      title: 'ELIFERD - Mon portfolio'
+    }
   },
   {
     path: "/contact",
     name: "Contact",
-    component: Contact
+    component: Contact,
+    meta: {
+      title: 'ELIFERD - Contact'
+    }
   }
 ];
 
