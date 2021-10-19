@@ -37,7 +37,7 @@
 <style lang="scss" scoped>
 
 hr.custom {
-    border: 1px solid black;
+    border: 1px solid var(--hr-custom-color);
     width: 70px;
 }
 
