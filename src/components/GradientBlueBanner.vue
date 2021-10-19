@@ -4,9 +4,8 @@
     </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .banner{
-    font-family: Montserrat, sans-serif;
     height: 210px;
     background: linear-gradient(#2BA59E, #283A95);
     width: 100%;
@@ -17,9 +16,10 @@
     justify-content: center;
     opacity: 1;
     transition: 0.4s;
-}
-.banner>span {
-    margin: auto;
+
+    &>span {
+        margin: auto;
+    }
 }
 
 @media(max-width: 767px) {
@@ -29,11 +29,13 @@
 }
 </style>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from "vue";
+
+export default Vue.extend({
   name: 'GradientBlueBanner',
   props: {
     page: String
   }
-}
+})
 </script>

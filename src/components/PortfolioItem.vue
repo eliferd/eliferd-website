@@ -13,51 +13,62 @@
     </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+
+@mixin full-size {
+    width: 100%;
+    height: 100%;
+}
+
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
-  background-color: transparent;
-  width: 230px;
-  height: 230px;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  margin: 32px 0;
+    background-color: transparent;
+    width: 230px;
+    height: 230px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin: 32px 0;
+    &:hover {
+        /* Do an horizontal flip when you move the mouse over the flip box container */
+        .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+    }
 }
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+    @include full-size;
+    position: relative;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
+
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
+.flip-card-front {
+    @include full-size;
+    position: absolute;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    @extend .flip-card-front;
 }
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
-  color: black;
+    background-color: #bbb;
+    color: black;
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color:#283A95;
-  color: white;
-  transform: rotateY(180deg);
+    background-color:#283A95;
+    color: white;
+    transform: rotateY(180deg);
 }
 
 .pi-button {
@@ -66,9 +77,10 @@
     color: white;
     transition-duration: 0.2s;
     padding: 10px 12px;
-}
-.pi-button:hover {
-    background-color: rgb(65, 225, 177);
+
+    &:hover {
+        background-color: rgb(65, 225, 177);
+    }
 }
 
 @media (max-width: 1199px) {
@@ -79,8 +91,11 @@
 
 </style>
 
-<script>
-export default {
+<script lang="ts">
+
+import Vue from 'vue';
+
+export default Vue.extend({
   name: 'PortfolioItem',
   props: {
     name: String,
@@ -88,5 +103,6 @@ export default {
     url: String,
     imageURL: String
   }
-}
+});
+
 </script>
