@@ -1,7 +1,5 @@
 # eliferd-website
 
-https://eliferd.fr
-
 ## Project setup
 ```
 npm install

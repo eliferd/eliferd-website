@@ -6,7 +6,7 @@
       ELIFERD
     </div>
 
-    <b-container class="shadow-lg px-0 overflow-hidden">
+    <b-container class="container-shadow px-0 overflow-hidden">
 
       <b-navbar toggleable="lg" type="light" variant="white">
 
@@ -23,9 +23,7 @@
 
           </b-navbar-nav>
 
-          <!-- <b-navbar-nav class="ml-auto">
-            <b-nav-item href="#" class="darkmode-icon"><img src="/dark-mode.svg" width="20px" alt="Darkmode Switcher"></b-nav-item>
-          </b-navbar-nav> -->
+          <DarkmodeSwitcher/>
         </b-collapse>
 
       </b-navbar>
@@ -38,31 +36,44 @@
 
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
+:root {
+  --background-color-primary: #F3F3F3;
+  --color-primary: #2c3e50;
+  --logo-color: #404040;
+  --logo-shadow-color: rgba(0, 0, 0, 0.35);
+  --hr-custom-color: black;
+  --container-shadow: rgba(0, 0, 0, 0.18);
+}
+
+:root.dark-theme {
+  --background-color-primary: #222222;
+  --color-primary: #d4d4d4;
+  --logo-color: #ffffff;
+  --logo-shadow-color: rgba(255, 255, 255, 0.35);
+  --hr-custom-color: white;
+  --container-shadow: rgba(0, 0, 0, 0.3);
+}
 
 #app {
   font-family: Montserrat, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #F3F3F3;
-  color: #2c3e50;
+  background-color: var(--background-color-primary);
+  color: var(--color-primary);
 }
 
 .logo {
     font-family: Montserrat, sans-serif;
     font-size: 92px;
     padding: 30px 0 30px 0;
-    color: #404040;
-    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.35);
+    color: var(--logo-color);
+    text-shadow: 0px 4px 8px var(--logo-shadow-color);
     transition: font-size 0.4s;
 }
 
-.darkmode-icon {
-    opacity: 0.5;
-
-    &:hover {
-      opacity: 0.8;
-    }
+.container-shadow {
+  box-shadow: 0 1rem 3rem var(--container-shadow);
 }
 
 @media(max-width: 767px) {
@@ -71,3 +82,15 @@
     }
 }
 </style>
+
+<script lang="ts">
+import Vue from 'vue';
+import DarkmodeSwitcher from '@/components/DarkmodeSwitcher.vue';
+
+export default Vue.extend({
+  name: 'App',
+  components: {
+    DarkmodeSwitcher
+  }
+});
+</script>
