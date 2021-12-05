@@ -1,5 +1,5 @@
 <template>
-    <a v-bind:href="url" target="_blank">
+    <a v-bind:href="url" target="_blank" rel="noopener noreferrer">
         <div class="wrapper">
             <span class="projectItem" v-bind:style="{ backgroundImage: 'url(' + this.backgroundURL + ')' }"></span>
             <span class="text-container">

@@ -1,16 +1,16 @@
 <template>
     <div class="flip-badge">
-      
-      <a :href="url" class="flip-badge-link" target="_blank">
-      
+
+      <a :href="url" class="flip-badge-link" target="_blank" rel="noopener noreferrer">
+
         <div class="flip-badge-inner" :style="badgeBg">
-      
+
             <font-awesome-icon :icon="['fab', icon]" size="6x"/>
             <h3 v-if="name.length < 10">{{ name }}</h3>
             <h4 v-else>{{ name }}</h4>
-      
+
         </div>
-      
+
       </a>
 
     </div>
