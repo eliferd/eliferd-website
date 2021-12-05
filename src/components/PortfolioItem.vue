@@ -98,10 +98,22 @@ import Vue from 'vue';
 export default Vue.extend({
   name: 'PortfolioItem',
   props: {
-    name: String,
-    description: String,
-    url: String,
-    imageURL: String
+    name: {
+      type: String,
+      required: true
+    },
+    description: {
+      type: String,
+      required: true
+    },
+    url: {
+      type: String,
+      required: true
+    },
+    imageURL: {
+      type: String,
+      required: true
+    }
   }
 });
 

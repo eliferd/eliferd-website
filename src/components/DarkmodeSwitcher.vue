@@ -4,18 +4,6 @@
     </b-navbar-nav>
 </template>
 
-<style lang="scss" scoped>
-
-.darkmode-icon {
-    opacity: 0.5;
-
-    &:hover {
-      opacity: 0.8;
-    }
-}
-
-</style>
-
 <script lang="ts">
 import Vue from 'vue';
 
@@ -46,15 +34,23 @@ export default Vue.extend({
         getMediaPreference() {
             const hasSystemPreference = window.matchMedia("(prefers-color-scheme: dark)").matches && !localStorage.getItem('user-theme');
             if (hasSystemPreference) {
-                return "dark-theme";
+                return 'dark-theme';
             } else {
-                if(localStorage.getItem('user-theme')) {
-                    return localStorage.getItem('user-theme');
-                } else {
-                    return "light-theme";
-                }
+                return localStorage.getItem('user-theme') ?? 'light-theme';
             }
         }
     }
 });
 </script>
+
+<style lang="scss" scoped>
+
+.darkmode-icon {
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+</style>
