@@ -2,7 +2,7 @@
     <b-row>
 
         <b-col cols="12" class="mb-3 text-center">
-            Eliferd © 2021 Tous droits réservés.
+            Eliferd © 2022
         </b-col>
 
     </b-row>
